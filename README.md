@@ -1,5 +1,5 @@
 ﻿# Barbershop-Backend-build-0.1
- Prévia do Back-End para as requisições do site.
+Prévia do Back-End para as requisições do site.
 Criação do projeto usando (Javascript,ReactJS,Nodejs,MongoDB,Express.js,Prisma,Vite)
 Pagina inicial de um Site para Barbearias(parte 1 do projeto)
 O projeto vai consistir com:
