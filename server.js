@@ -16,7 +16,8 @@ app.post('/usuarios', async (req, res) => {
         data: {
             email: req.body.email,
             name: req.body.name,
-            age: req.body.age
+            tel: req.body.tel,
+            servico: req.body.servico
         }
     })
 
@@ -30,9 +31,10 @@ app.get('/usuarios', async (req, res) => {
     if (req.query) {
         users = await prisma.user.findMany({
             where: {
-                name: req.query.name,
-                age: req.query.age,
-                email: req.query.email
+                email: req.body.email,
+                name: req.body.name,
+                tel: req.body.tel,
+                servico: req.body.servico
             }
         })
 
@@ -52,7 +54,8 @@ app.put('/usuarios/:id', async (req, res) => {
         data: {
             email: req.body.email,
             name: req.body.name,
-            age: req.body.age
+            tel: req.body.tel,
+            servico: req.body.servico
         }
     })
 
